@@ -1,5 +1,6 @@
 import Row from "./components/Row";
 import categories from "./api";
+import "./App.css";
 
 function App(){
 
@@ -11,7 +12,9 @@ function App(){
  return <Row 
  key={category.name} 
  title={category.title} 
- path={category.path}/>
+ path={category.path}
+ isLarge={category.isLarge}
+ />
 })
 }
 </div>
