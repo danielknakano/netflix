@@ -1,12 +1,14 @@
 import Row from "./components/Row";
 import categories from "./api";
 import "./App.css";
+import Banner from "./components/Banner";
 
 function App(){
 
   return (
 
 <div className="App">
+  <Banner/>
 
 {categories.map((category) => {
  return <Row 
